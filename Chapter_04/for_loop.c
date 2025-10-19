@@ -21,7 +21,7 @@ int main()
 
     // By Character -------------
 
-    for (char ch = 'A'; ch < 'Z'; ch++)
+    for (char ch = 'A'; ch <= 'Z'; ch++)
     {
         printf("%c \n", ch);
     }
