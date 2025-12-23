@@ -1,16 +1,27 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int circle () ;
+float circle();
 
-int main () {
-    int r, circleArea;
-    printf("Enter the value of Radius.");
+int main()
+{
+    int r;
+    float circleArea;
+
+    printf("Enter the value of Radius: ");
 
     scanf("%d", &r);
 
-    circle(r);
+    circleArea = circle(r);
+
+    printf("The area of the Circle is: %f ", circleArea);
 }
 
-int circle(int a) {
-    printf("\nyou entered %d", a);
+float circle(int a)
+{
+    float circleArea;
+    
+    circleArea = 3.1416 * a * a;
+    // printf("\nyou entered %f", circleArea);
+
+    return circleArea;
 }
